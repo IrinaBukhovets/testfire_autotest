@@ -4,7 +4,7 @@ from MainPage import LoginPage
 from MainPage import UserPage
 
 
-def test_back (browser):    
+def test_login (browser):    
 
     press_sign_in_button = LandingPage()
     press_sign_in_button.button_signin_click()
