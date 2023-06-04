@@ -2,7 +2,8 @@ import time
 from MainPage import LandingPage
 from MainPage import LoginPage
 from MainPage import UserPage
-
+from config import LOGIN
+from config import PASSWORD
 
 def test_login (browser):    
 
@@ -10,9 +11,9 @@ def test_login (browser):
     press_sign_in_button.button_signin_click()
     time.sleep(2)
     enter_username_and_password = LoginPage()
-    enter_username_and_password.enter_login("jsmith")
+    enter_username_and_password.enter_login(LOGIN)
     time.sleep(2)
-    enter_username_and_password.enter_password ("demo1234")
+    enter_username_and_password.enter_password(PASSWORD)
     time.sleep(2)
     enter_username_and_password.click_on_the_button_login()
     time.sleep(2)
